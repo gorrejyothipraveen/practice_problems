@@ -30,3 +30,13 @@ Deno.test("simple test", () => {
   const path = '/../../..'
   assertEquals(resolvePath(path), '/');
 });
+
+Deno.test("Parent directory logic: /x/y/.. -> /x", () => {
+  const path = '/x/y/..'
+  assertEquals(resolvePath(path), '/x');
+});
+
+Deno.test("Complex mix: /a/./b/../../c/ -> /c", () => {
+  const path = '/a/./b/../../c/'
+  assertEquals(resolvePath(path), '/c');
+});

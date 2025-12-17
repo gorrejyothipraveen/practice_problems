@@ -38,4 +38,4 @@ Write a function `resolvePath(commands)` that calculates the final absolute file
 2.  The solution handles empty inputs (returns `"/"`).
 
 ### Optional Stretch
-Handle an input that doesn't start with `/`. If the input is `x/y`, assume it is relative to a starting path of `/root` (so result is `/root/x/y`).
+Handle an input that doesn't start with `/`. If the input is `x/y`, assume it is relative to a starting path of `/root` (so result is `/root/x/y`). 
